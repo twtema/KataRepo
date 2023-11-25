@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Main {
+
     private final static UserService userService = new UserServiceImpl();
 
     public static void main(String[] args) throws SQLException {
@@ -26,5 +27,7 @@ public class Main {
         userService.cleanUsersTable();
 
         userService.dropUsersTable();
+
+
     }
 }
